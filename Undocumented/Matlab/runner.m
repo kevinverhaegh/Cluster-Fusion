@@ -1,0 +1,131 @@
+IonDeg=zeros(98,1);
+E0=zeros(98,1);
+R=zeros(98,1);
+dens=zeros(98,1);
+stringfield=cell(98,1);
+Ek=zeros(98,1);
+Rm=zeros(98,1);
+
+
+cell{1,1}='F:\EoverRTvdWaals\UCP001.mat';
+cell{2,1}='F:\EoverRTvdWaals\UCP002.mat';
+cell{3,1}='F:\EoverRTvdWaals\UCP003.mat';
+cell{4,1}='F:\EoverRTvdWaals\UCP004.mat';
+cell{5,1}='F:\EoverRTvdWaals\UCP005.mat';
+cell{6,1}='F:\EoverRTvdWaals\UCP006.mat';
+cell{7,1}='F:\EoverRTvdWaals\UCP007.mat';
+cell{8,1}='F:\EoverRTvdWaals\UCP008.mat';
+cell{9,1}='F:\EoverRTvdWaals\UCP009.mat';
+cell{10,1}='F:\EoverRTvdWaals\UCP010.mat';
+cell{11,1}='F:\EoverRTvdWaals\UCP011.mat';
+cell{12,1}='F:\EoverRTvdWaals\UCP012.mat';
+cell{13,1}='F:\EoverRTvdWaals\UCP013.mat';
+cell{14,1}='F:\EoverRTvdWaals\UCP014.mat';
+cell{15,1}='F:\EoverRTvdWaals\UCP015.mat';
+cell{16,1}='F:\EoverRTvdWaals\UCP016.mat';
+cell{17,1}='F:\EoverRTvdWaals\UCP017.mat';
+cell{18,1}='F:\EoverRTvdWaals\UCP018.mat';
+cell{19,1}='F:\EoverRTvdWaals\UCP019.mat';
+cell{20,1}='F:\EoverRTvdWaals\UCP020.mat';
+cell{21,1}='F:\EoverRTvdWaals\UCP021.mat';
+cell{22,1}='F:\EoverRTvdWaals\UCP022.mat';
+cell{23,1}='F:\EoverRTvdWaals\UCP023.mat';
+cell{24,1}='F:\EoverRTvdWaals\UCP024.mat';
+cell{25,1}='F:\EoverRTvdWaals\UCP025.mat';
+cell{26,1}='F:\EoverRTvdWaals\UCP026.mat';
+cell{27,1}='F:\EoverRTvdWaals\UCP027.mat';
+cell{28,1}='F:\EoverRTvdWaals\UCP028.mat';
+cell{29,1}='F:\EoverRTvdWaals\UCP029.mat';
+cell{30,1}='F:\EoverRTvdWaals\UCP030.mat';
+cell{31,1}='F:\EoverRTvdWaals\UCP031.mat';
+cell{32,1}='F:\EoverRTvdWaals\UCP032.mat';
+cell{33,1}='F:\EoverRTvdWaals\UCP033.mat';
+cell{34,1}='F:\EoverRTvdWaals\UCP034.mat';
+cell{35,1}='F:\EoverRTvdWaals\UCP035.mat';
+cell{36,1}='F:\EoverRTvdWaals\UCP036.mat';
+cell{37,1}='F:\EoverRTvdWaals\UCP037.mat';
+cell{38,1}='F:\EoverRTvdWaals\UCP038.mat';
+cell{39,1}='F:\EoverRTvdWaals\UCP039.mat';
+cell{40,1}='F:\EoverRTvdWaals\UCP040.mat';
+cell{41,1}='F:\EoverRTvdWaals\UCP041.mat';
+cell{42,1}='F:\EoverRTvdWaals\UCP042.mat';
+cell{43,1}='F:\EoverRTvdWaals\UCP043.mat';
+cell{44,1}='F:\EoverRTvdWaals\UCP044.mat';
+cell{45,1}='F:\EoverRTvdWaals\UCP045.mat';
+cell{46,1}='F:\EoverRTvdWaals\UCP046.mat';
+cell{47,1}='F:\EoverRTvdWaals\UCP047.mat';
+cell{48,1}='F:\EoverRTvdWaals\UCP048.mat';
+cell{49,1}='F:\EoverRTvdWaals\UCP050.mat';
+cell{50,1}='F:\EoverRTvdWaalsLP\UCP001.mat';
+cell{51,1}='F:\EoverRTvdWaalsLP\UCP002.mat';
+cell{52,1}='F:\EoverRTvdWaalsLP\UCP003.mat';
+cell{53,1}='F:\EoverRTvdWaalsLP\UCP004.mat';
+cell{54,1}='F:\EoverRTvdWaalsLP\UCP005.mat';
+cell{55,1}='F:\EoverRTvdWaalsLP\UCP006.mat';
+cell{56,1}='F:\EoverRTvdWaalsLP\UCP007.mat';
+cell{57,1}='F:\EoverRTvdWaalsLP\UCP008.mat';
+cell{58,1}='F:\EoverRTvdWaalsLP\UCP009.mat';
+cell{59,1}='F:\EoverRTvdWaalsLP\UCP010.mat';
+cell{60,1}='F:\EoverRTvdWaalsLP\UCP011.mat';
+cell{61,1}='F:\EoverRTvdWaalsLP\UCP012.mat';
+cell{62,1}='F:\EoverRTvdWaalsLP\UCP013.mat';
+cell{63,1}='F:\EoverRTvdWaalsLP\UCP014.mat';
+cell{64,1}='F:\EoverRTvdWaalsLP\UCP015.mat';
+cell{65,1}='F:\EoverRTvdWaalsLP\UCP016.mat';
+cell{66,1}='F:\EoverRTvdWaalsLP\UCP017.mat';
+cell{67,1}='F:\EoverRTvdWaalsLP\UCP018.mat';
+cell{68,1}='F:\EoverRTvdWaalsLP\UCP019.mat';
+cell{69,1}='F:\EoverRTvdWaalsLP\UCP020.mat';
+cell{70,1}='F:\EoverRTvdWaalsLP\UCP021.mat';
+cell{71,1}='F:\EoverRTvdWaalsLP\UCP022.mat';
+cell{72,1}='F:\EoverRTvdWaalsLP\UCP023.mat';
+cell{73,1}='F:\EoverRTvdWaalsLP\UCP024.mat';
+cell{74,1}='F:\EoverRTvdWaalsLP\UCP025.mat';
+cell{75,1}='F:\EoverRTvdWaalsLP\UCP026.mat';
+cell{76,1}='F:\EoverRTvdWaalsLP\UCP027.mat';
+cell{77,1}='F:\EoverRTvdWaalsLP\UCP028.mat';
+cell{78,1}='F:\EoverRTvdWaalsLP\UCP029.mat';
+cell{79,1}='F:\EoverRTvdWaalsLP\UCP030.mat';
+cell{80,1}='F:\EoverRTvdWaalsLP\UCP031.mat';
+cell{81,1}='F:\EoverRTvdWaalsLP\UCP032.mat';
+cell{82,1}='F:\EoverRTvdWaalsLP\UCP033.mat';
+cell{83,1}='F:\EoverRTvdWaalsLP\UCP034.mat';
+cell{84,1}='F:\EoverRTvdWaalsLP\UCP035.mat';
+cell{85,1}='F:\EoverRTvdWaalsLP\UCP036.mat';
+cell{86,1}='F:\EoverRTvdWaalsLP\UCP037.mat';
+cell{87,1}='F:\EoverRTvdWaalsLP\UCP038.mat';
+cell{88,1}='F:\EoverRTvdWaalsLP\UCP039.mat';
+cell{89,1}='F:\EoverRTvdWaalsLP\UCP040.mat';
+cell{90,1}='F:\EoverRTvdWaalsLP\UCP041.mat';
+cell{91,1}='F:\EoverRTvdWaalsLP\UCP042.mat';
+cell{92,1}='F:\EoverRTvdWaalsLP\UCP043.mat';
+cell{93,1}='F:\EoverRTvdWaalsLP\UCP044.mat';
+cell{94,1}='F:\EoverRTvdWaalsLP\UCP045.mat';
+cell{95,1}='F:\EoverRTvdWaalsLP\UCP046.mat';
+cell{96,1}='F:\EoverRTvdWaalsLP\UCP047.mat';
+cell{97,1}='F:\EoverRTvdWaalsLP\UCP048.mat';
+cell{98,1}='F:\EoverRTvdWaalsLP\UCP050.mat';
+
+%IND=3886;
+
+for j=1:98
+load(cell{j,1});
+R(j) = (3*output.param.nps/(4*pi*output.param.dens))^(1/3);
+E0(j) = output.param.E0;
+dens(j)=output.param.dens;
+IonDegH=0;
+EkH=0;
+Rm(j)=sqrt(max(output.x{3,1}(end,:).^2 + output.y{3,1}(end,:).^2 + output.z{3,1}(end,:).^2));
+for i=1:numel(output.x{1,1}(1,:))
+    if output.x{1,1}(end,i)~= 0
+        if sqrt(output.x{1,1}(end,i)^2 + output.y{1,1}(end,i)^2 + output.z{1,1}(end,i)^2) < Rm(j)
+            IonDegH=IonDegH+1;
+            EkH=EkH+PhysConst.me*PhysConst.c^2 * ((1 / sqrt( 1 - (output.vx{1,1}(end,i)^2 + output.vy{1,1}(end,i)^2 + output.vz{1,1}(end,i)^2)))-1);
+        end
+    end
+end
+IonDeg(j)=1- IonDegH/output.NumberInGroup(end,1);
+Ek(j) = EkH/IonDegH;
+disp(IonDeg(j));
+end
+

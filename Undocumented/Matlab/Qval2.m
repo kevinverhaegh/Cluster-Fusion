@@ -1,0 +1,16 @@
+Lray = pi*rw^2 / lambda  
+Vf = 2*Lray*(pi*rw^2)
+omegaL = 2*pi*PhysConst.c / lambda 
+densmax = omegaL^2 * ((PhysConst.me * PhysConst.epsilon0)/(PhysConst.e^2))
+foptm = densmax / nc ;
+densmax = nc * f
+Nfusion = 1/2 * Vf * densmax^2 * Lray * sigma
+Scal = (16*(PhysConst.me^2 *PhysConst.epsilon0^2 * pi^7 * PhysConst.c^4)/(PhysConst.e^4))*(rw^6 / lambda^6) * sigma
+Scal2= pi^3 * (rw^6 / lambda^2) * nc^2 * f^2 * sigma
+sigmaopter = sigma/(rhoV^2 * Rv^2)
+sigmaopterDT = sigmaDT/(rhoVDT^2 * Rv^2)
+tauL = 20e-15;
+Ef = 2.5e6 * PhysConst.e ;
+EfDT = 14.1e6 * PhysConst.e ;
+Qopt = 6.3e49 * Ef * sigmaopter * rw^4 / (lambda^6 * tauL ) 
+QoptDT = 6.3e49 * EfDT * sigmaopterDT * rw^4 / (lambda^6 * tauL ) 
